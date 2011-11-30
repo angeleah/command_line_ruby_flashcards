@@ -1,0 +1,25 @@
+term:absolute_path
+def:Converts a pathname to an absolute pathname. Relative paths are referenced from the current working directory of the process unless dir_string is given, in which case it will be used as the starting point. If the given pathname starts with a “~” it is NOT expanded, it is treated as a normal directory name.
+term:atime
+def:Returns the last access time for the named file as a Time object).
+term:basename
+def:Returns the last component of the filename given in file_name, which must be formed using forward slashes (“/”) regardless of the separator used on the local file system. If suffix is given and present at the end of file_name, it is removed.
+term:blockdev?
+def:Returns true if the named file is a block device.
+term:chardev?
+def:Returns true if the named file is a character device.
+term:chmod
+def:Changes permission bits on the named file(s) to the bit pattern represented by mode_int. Actual effects are operating system dependent (see the beginning of this section). On Unix systems, see chmod(2) for details. Returns the number of files processed.
+term:chown
+def:Changes the owner and group of the named file(s) to the given numeric owner and group id’s. Only a process with superuser privileges may change the owner of a file. The current owner of a file may change the file’s group to any group to which the owner belongs. A nil or -1 owner or group id is ignored. Returns the number of files processed.
+term:ctime
+def:Returns the change time for the named file (the time at which directory information about the file was changed, not the file itself).
+term:delete
+def:Deletes the named files, returning the number of names passed as arguments. Raises an exception on any error. See also Dir::rmdir.
+term:directory?
+def:Returns true if the named file is a directory, or a symlink that points at a directory, and false otherwise.
+term:dirname
+def:Returns all components of the filename given in file_name except the last one. The filename must be formed using forward slashes (“/”) regardless of the separator used on the local file system.
+term:executable?
+def:Returns true if the named file is executable by the effective user id of this process.
+
